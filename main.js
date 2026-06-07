@@ -9,7 +9,7 @@ if (window.innerWidth >= 1000) {
   });
 } else {
   button.addEventListener("click", () => {
-    author.style.display = "none";
+    author.classList.add("is-hidden");
     icons.classList.add("icons-small-screen");
     removeShare();
   });

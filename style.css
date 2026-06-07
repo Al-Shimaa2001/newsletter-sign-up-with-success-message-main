@@ -10,7 +10,6 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  font-family: young-serif-regular sans-serif;
 }
 
 :root {
@@ -19,12 +18,15 @@
   --social-background: hsl(217, 19%, 35%);
   --text-color: hsl(214, 17%, 51%);
 }
+body {
+  font-family: young-serif-regular sans-serif;
+}
 main {
   background-color: var(--main-background);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10% 10%;
+  padding: 10%;
 }
 section {
   width: 80%;
@@ -59,6 +61,15 @@ span {
   display: flex;
   justify-content: start;
   align-items: center;
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+.author.is-hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 .author p {
   color: var(--text-color);
@@ -94,7 +105,9 @@ button img {
   border-radius: 1em;
   gap: 2em;
   transform: translate(200px, -170px);
-  display: none;
+}
+.icon--visible {
+  visibility: hidden;
 }
 .icons::after {
   content: "▼";
@@ -128,7 +141,7 @@ button img {
     margin-left: 2em;
   }
   .icons-small-screen {
-    transform: translate(0);
+    transform: translate(-10px, 0);
     width: 100%;
     border-radius: 0 0 2em 2em;
     display: flex;
