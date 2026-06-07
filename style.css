@@ -106,8 +106,11 @@ button img {
   gap: 2em;
   transform: translate(200px, -170px);
 }
-.icon--visible {
+.icon--nonvisible {
   visibility: hidden;
+}
+.icon--visible {
+  visibility: visible;
 }
 .icons::after {
   content: "▼";
@@ -144,7 +147,7 @@ button img {
     transform: translate(-10px, 0);
     width: 100%;
     border-radius: 0 0 2em 2em;
-    display: flex;
+    visibility: visible;
   }
   .icons p {
     letter-spacing: 0em;

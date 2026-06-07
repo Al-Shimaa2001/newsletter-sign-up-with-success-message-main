@@ -4,7 +4,8 @@ let author = document.querySelector(".author");
 
 if (window.innerWidth >= 1000) {
   button.addEventListener("click", function () {
-    icons.style.display = "flex";
+    icons.classList.remove("icon--nonvisible");
+    icons.classList.add("icon--visible");
     removeShare();
   });
 } else {
@@ -18,7 +19,8 @@ if (window.innerWidth >= 1000) {
 function removeShare() {
   button.addEventListener("mouseleave", () => {
     setTimeout(() => {
-      icons.style.display = "none";
+      icons.classList.remove("icon--visible");
+      icons.classList.add("icon--nonvisible");
       if (author.style.display == "none") {
         author.style.display = "flex";
       }
