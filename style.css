@@ -88,24 +88,31 @@ input:focus {
   border: 1px solid var(--error-color) !important;
   box-shadow: 2px 2px 5px var(--error-color);
 }
-button {
+.submit {
+  text-decoration: none;
   background-color: var(--Blue-800);
   color: var(--White);
   width: 100%;
   padding: 1em;
   margin: 1em 0;
   border-radius: 0.5em;
+  cursor: pointer;
 }
 .error {
   visibility: hidden;
   font-size: 12px;
   color: red;
   float: right;
+  transition:
+    all 200ms,
+    opacity 400ms;
+  transform: scale(1.1);
 }
 footer {
   text-align: center;
   margin: 2em;
 }
+
 @media screen and (max-width: 1138px) {
   main {
     height: 100%;
