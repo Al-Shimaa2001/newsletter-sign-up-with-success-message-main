@@ -1,4 +1,4 @@
-let email = document.querySelector("#mail");
+const email = document.querySelector("#mail");
 let submit = document.querySelector(".submit");
 let error = document.querySelector(".error");
 submit.addEventListener("click", (e) => {

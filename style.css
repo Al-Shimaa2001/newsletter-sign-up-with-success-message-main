@@ -69,7 +69,6 @@ form {
   padding: 1em 0;
 }
 label {
-  font: bold;
   display: inline-block;
 }
 input {
@@ -81,11 +80,11 @@ input {
 }
 
 input:hover {
-  border: 1px solid var(--error-color) !important;
+  border: 1px solid var(--error-color);
   box-shadow: 2px 2px 5px var(--error-color);
 }
 input:focus {
-  border: 1px solid var(--error-color) !important;
+  border: 1px solid var(--error-color);
   box-shadow: 2px 2px 5px var(--error-color);
 }
 .submit {
