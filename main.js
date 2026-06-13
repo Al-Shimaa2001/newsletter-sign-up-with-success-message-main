@@ -2,7 +2,7 @@ const email = document.querySelector("#mail");
 const submit = document.querySelector(".submit");
 const error = document.querySelector(".error");
 submit.addEventListener("click", (e) => {
-  let value = email.value.trim();
+  const value = email.value.trim();
   if (value === "") {
     e.preventDefault();
     error.style.visibility = "visible";
@@ -10,7 +10,6 @@ submit.addEventListener("click", (e) => {
     errorVisibility();
   } else {
     if (value) {
-      console.log(value);
       window.location.href = "./success-page.html";
       email.value = "";
     }
