@@ -1,6 +1,6 @@
 const email = document.querySelector("#mail");
-let submit = document.querySelector(".submit");
-let error = document.querySelector(".error");
+const submit = document.querySelector(".submit");
+const error = document.querySelector(".error");
 submit.addEventListener("click", (e) => {
   let value = email.value.trim();
   if (value === "") {
