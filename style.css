@@ -37,9 +37,8 @@ section :nth-child(1) {
 section :nth-child(2) {
   order: 1;
 }
-aside {
-  width: 56%;
-  margin: 4em 0;
+.aside {
+  width: 99.9%;
 }
 .illustration {
   width: 596px;
@@ -112,14 +111,13 @@ button:hover {
   transition:
     all 200ms,
     opacity 400ms;
-  transform: scale(1.1);
 }
 footer {
   text-align: center;
   margin: 2em;
 }
 
-@media screen and (max-width: 1138px) {
+@media screen and (max-width: 71.125rem) {
   main {
     height: 100%;
     padding: 3em;
@@ -137,16 +135,15 @@ footer {
   section :nth-child(2) {
     order: 2;
   }
-  aside {
-    width: 63vw;
-    margin: 0;
+  .aside {
+    width: 100%;
   }
   .illustration {
     width: 100%;
     height: 100%;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 48rem) {
   main {
     height: 100%;
     padding: 0;
@@ -163,9 +160,8 @@ footer {
   section :nth-child(2) {
     order: 2;
   }
-  aside {
+  .aside {
     width: 99.999%;
-    margin: 0;
   }
   .illustration {
     width: 100%;
