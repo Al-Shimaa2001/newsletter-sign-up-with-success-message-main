@@ -98,6 +98,13 @@ input:focus {
   border-radius: 0.5em;
   cursor: pointer;
 }
+button:hover {
+  background-image: linear-gradient(
+    to right,
+    var(--error-color),
+    rgb(241, 200, 124)
+  );
+}
 .error {
   visibility: hidden;
   font-size: 12px;

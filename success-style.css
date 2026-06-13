@@ -1,0 +1,17 @@
+.success {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 10%;
+  align-items: start;
+  gap: 0.5em;
+  height: 60%;
+  width: 60%;
+}
+.success :nth-child(1) {
+  order: 3;
+  width: 30%;
+}
+.success :nth-child(3) {
+  order: 1;
+  color: gray;
+}

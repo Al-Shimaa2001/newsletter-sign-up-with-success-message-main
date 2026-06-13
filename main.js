@@ -11,7 +11,7 @@ submit.addEventListener("click", (e) => {
   } else {
     if (value) {
       console.log(value);
-      window.location.href = "./success-page";
+      window.location.href = "./success-page.html";
       email.value = "";
     }
   }
